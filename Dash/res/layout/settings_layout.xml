@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/settings_control"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:id="@+id/compass_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/compass_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_compass" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/compass"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/compass_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/compass_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/light_sensor_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/light_sensor_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_light" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/light_sensor"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/light_sensor_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/light_sensor_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gyroscope_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/gyro_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_gyro" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/gyroscope"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/gyroscope_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gyroscope_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gps_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/gps_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_gps" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/gps"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/gps_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/proximity_sensor_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/proximity_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_proximity" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/proximity_sensor"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/proximity_sensor_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/proximity_sensor_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nfc_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/nfc_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_nfc" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/nfc"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/nfc_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nfc_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/voice_control_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:paddingBottom="0dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="0dp"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/voice_icon"
+                android:layout_width="24dip"
+                android:layout_height="24dp"
+                android:contentDescription="@string/image_description"
+                android:src="@drawable/icon_sensor_voice" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="@string/voice"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/voice_control"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="false" />
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/voice_tip"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+</LinearLayout>

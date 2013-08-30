@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AppDashActivity!</string>
+    <string name="app_name">My Maps</string>
+    <string name="map_name">MapViewer</string>
+    <string name="mapviewer">Map Viewer</string>
+    <string name="back">Go Back</string>
+    <string name="show_info">Show Info</string>
+    <string name="hide_info">Hide Info</string>
+    <string name="welcome">Welcome! Please choose a map.</string>
+    <string name="title_activity_map_viewer">MapViewer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="clear_all_maps">Delete All Maps &amp; Folders</string>
+    <string name="loading">Loading&#8230;</string>
+    <string name="loading_webmap">Loading WebMap&#8230;</string>
+    <string name="invalid_webmap">Invalid WebMap</string>
+    <string name="empty">There is no WebMap on this device.</string>
+    <string name="empty_text"></string>
+    <string name="delete_confirm">Delete All Items?</string>
+    <string name="delete_single_confirm">Delete All Maps &amp; Folders?</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="action_settings">Settings</string>
+    <string name="gps_emulator">Can\'t use GPS on emulator&#8230;</string>
+    <string name="geocoding_title">Geocoder</string>
+    <string name="geocoding_tip">Please enter the address:</string>
+    <string name="geocoding_url">http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer</string>
+    <string name="enter">Enter</string>
+    <string name="clear">Clear</string>
+    <string name="graphic_layer">GraphicLayer</string>
+    <string name="searching_address">Searching for address&#8230;</string>
+    <string name="basemap_tip">Please select a basemap.</string>
+    <string name="location">Map Extent</string>
+    <string name="my_loc">My Location</string>
+    <string name="default_loc">Default Extent</string>
+    <string name="find_new_loc">Find New Location</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="no_bookmark">No Bookmarks Available</string>
+    <string name="search">Search</string>
+    <string name="WORLD_STREET_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer</string>
+    <string name="WORLD_TOPO_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer</string>
+    <string name="WORLD_NATGEO_MAP">http://services.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer</string>
+    <string name="OCEAN_BASEMAP">http://services.arcgisonline.com/ArcGIS/rest/services/Ocean_Basemap/MapServer</string>
+    <string name="StreetMapMenu">World Street Map</string>
+    <string name="TopoMenu">World Topo</string>
+    <string name="NatGeoMenu">NatGeo World Map</string>
+    <string name="OceanMenu">Ocean Basemap</string>
+    <string name="OSMMenu">Open Street Map</string>
+    <string name="title">Title: </string>
+    <string name="owner">By: </string>
+    <string name="created">Date Created: </string>
+    <string name="modified">Date Modified: </string>
+    <string name="snippet">Snippet: </string>
+    <string name="access_level">Access Level: </string>
+    <string name="num_view">Number of views: </string>
+    <string name="num_rating">Number of rating: </string>
+    <string name="avg_rating">Rating: </string>
+    <string name="credits">Credits: </string>
+    <string name="esri_credits">Mapping API provided by Esri ArcGIS Runtime API for Android.</string>
+    <string name="home_msg_no_map">Welcome!\n\nStart by opening a WebMap link via on ArcGIS.com or Email or SMS.\n\nOR, Visit Showcase to browse and add maps.</string>
+    <string name="home_msg_no_wifi">No Internet Connection.</string>
+    <string name="no_layer">The WebMap is Empty.</string>
+    <string name="no_operational_layer">There is no Operational Layer.</string>
+    <string name="disconnected">No Internet connection</string>
+    <string name="connected">Internet connected</string>
+
+    <!-- resource -->
+    <item name="basemap_switch" type="id">basemap_switch</item>
+    <item name="my_loc" type="id">my_loc</item>
+    <item name="default_view" type="id">default_view</item>
+    <item name="geocoding_address" type="id">geocoding_address</item>
+    <item name="geocoding_confirm" type="id">geocoding_confirm</item>
+    <item name="geocoding_clear" type="id">geocoding_clear</item>
+    <item name="drawer_background_color" type="color">#FF000000</item>
+
+    <string name="image_description">Image Description</string>
+    <string name="map_popup">Popup</string>
+
+    <!-- folder -->
+    <string name="new_folder_default_name">NewFolder</string>
+    <string name="add_new_folde">Create New Folder</string>
+    <string name="new_folde_name_hint">Name for new folder</string>
+    <string name="new_folde_enter">OK</string>
+    <string name="new_folde_cancel">Cancel</string>
+
+    <!-- long click -->
+    <string name="long_click_title_hint">Please choose an option:</string>
+    <string name="long_click_delete">Delete</string>
+    <string name="long_click_move">Move to</string>
+    <string name="long_click_enter">OK</string>
+    <string name="long_click_cancel">Cancel</string>
+    <string name="long_click_delete_all">Delete all items inside.</string>
+    <string name="long_click_delete_and_move_to_parent">Delete the folder and move items inside to parent.</string>
+    <string name="long_click_delete_and_move_to_root">Delete the folder and move items inside to root folder.</string>
+
+    <string-array name="delete_options">
+        <item>Delete folder &amp; all items.</item>
+        <item>Delete the folder &amp; move items.</item>
+    </string-array>
+
+    <!-- menu items -->
+    <string name="menu_empty">empty</string>
+    <string name="menu_settings">Sensors</string>
+    <string name="menu_showcase">Showcase</string>
+    <string name="menu_description">Description</string>
+    <string name="menu_basemap">Basemap</string>
+    <string name="menu_bookmarks">Bookmarks</string>
+    <string name="menu_layers">Layers</string>
+    <string name="menu_locating">Location</string>
+    <string name="menu_stop_locating">Clean Location</string>
+    <string name="menu_geocoding">Geocoding</string>
+    <string name="menu_about">About</string>
+    <string name="menu_wifi_direct">Find Peer</string>
+    <string name="menu_new_folder">New Folder</string>
+    <string name="menu_connect">Sync</string>
+
+    <!-- login -->
+    <string name="login_username">username</string>
+    <string name="login_password">password</string>
+    <string name="login_success">Sign in Success</string>
+    <string name="login_login">Sign in</string>
+    <string name="login_loading">Signing in&#8230;</string>
+    <string name="login_logout">Sign out</string>
+    <string name="login_clear">Clear</string>
+    <string name="login_forgot">Forgot username or password?</string>
+    <string name="login_reset">Reset Username or Password</string>
+    <string name="login_empty">Username and password can\'t be empty.</string>
+    <string name="login_fail">Fail to sign in. Wrong Username or Password.</string>
+    <string name="login_exit">Exit</string>
+
+    <!-- sensors -->
+    <string name="compass">Compass</string>
+    <string name="compass_tip">Tip: Turn the device to rotate the map.</string>
+    <string name="nfc">NFC</string>
+    <string name="nfc_tip">Tip: Touch two devices to share the WebMap. Beam it from one device to another.</string>
+    <string name="light_sensor">Light Sensor</string>
+    <string name="light_sensor_tip">Tip: Turn Auto Brightness Off. Set to maximum brightness.</string>
+    <string name="gyroscope">Gyroscope</string>
+    <string name="gyroscope_tip">Tip: Pan the map when you move the device. Change basemap when you shake the device.</string>
+    <string name="gps">GPS</string>
+    <string name="gps_tip">Tip: Track your location with GPS.</string>
+    <string name="proximity_sensor">Proximity Sensor</string>
+    <string name="proximity_sensor_tip">Tip: Sweep your hand to change basemap.</string>
+    <string name="voice">Voice</string>
+    <string name="voice_toast">Tip: Speak to the map to send commands.</string>
+    <string name="voice_tip">Tip: Speak to the map to send commands.\nSample Commands:\ncompass, light, gyro, my location, default extent, nfc, voice, basemap, layers, location, bookmark, about, description, sensors, where am I.</string>
+    <string name="voice_command_tip">compass, light, gyro, my location, extent, nfc, voice, base map, layers, location, bookmark, about, description, sensors, where am I</string>
+
+    <!-- voice -->
+    <string-array name="voice_commands">
+        <item>compass</item>
+        <item>light</item>
+        <item>gyro</item>
+        <item>gps</item>
+        <item>my location</item>
+        <item>extent</item>
+        <item>nfc</item>
+        <item>voice</item>
+        <item>base map</item>
+        <item>layers</item>
+        <item>location</item>
+        <item>bookmark</item>
+        <item>about</item>
+        <item>description</item>
+        <item>sensors</item>
+        <item>find</item>
+        <item>where am i</item>
+    </string-array>
+
+    <string name="voice_command_compass_on">Compass is on. Rotating the map.</string>
+    <string name="voice_command_compass_off">Compass is off</string>
+    <string name="voice_command_light_on">Auto Brightness is Off. Set to maximum brightness.</string>
+    <string name="voice_command_light_off">Auto Brightness is On.</string>
+    <string name="voice_command_gyro_on">Gyro is on, please move the device to pan, or shake the device to change base map.</string>
+    <string name="voice_command_gyro_off">Gyro is off.</string>
+    <string name="voice_command_my_location">Navigating to your location.</string>
+    <string name="voice_command_extent">Navigating to default extent.</string>
+    <string name="voice_command_nfc_on">NFC is on.</string>
+    <string name="voice_command_nfc_off">NFC is off.</string>
+    <string name="voice_command_voice_off">Voice command is off.</string>
+    <string name="voice_command_geocoding">You are here at the blue point.</string>
+    <string name="voice_command_find">Finding address</string>
+
+    <!-- wifi direct -->
+    <string name="me">My Device</string>
+    <string name="peers">Peers</string>
+    <string name="connect_peer">Sync</string>
+    <string name="disconnect_peer">Disconnect</string>
+    <string name="p2p_off_warning">P2P is disabled on the system. Please change settings.</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_sync_database">Sync Database</string>
+    <string name="disconnect_hint">Click to disconnect.</string>
+    <string name="cancel">Cancel</string>
+    <string name="sync">Sync Data</string>
+
+    <!-- bluetooth -->
+    <string name="bluetooth_sync_title">Bluetooth Sync</string>
+    <string name="bluetooth_connect_fail">Fail to Connect.</string>
+    <string name="bluetooth_not_connected">Not Connected.</string>
+    <string name="bluetooth_connecting">Connecting&#8230;</string>
+    <string name="bluetooth_connected">Connected.</string>
+    <string name="bluetooth_enabled">Bluetooth enabled.</string>
+    <string name="stop_listen">Stop Listen</string>
+    <string name="start_listen">Start Listen</string>
+    <string name="find_peer">Search Devices</string>
+    <string name="model_discovery">Discover</string>
+    <string name="model_listen">Listen</string>
+    <string name="model_send">Send</string>
+    <string name="model_receive">Receive</string>
+    <string name="model_bi">Bidirectional</string>
+    <string name="model_choose">Mode:</string>
+    <string name="option_choose">Sync:</string>
+    <string name="option_extent">Map Extent</string>
+    <string name="option_layer">Layers</string>
+    <string name="option_popup">Popup</string>
+    <string name="bt_not_supported">Bluetooth is not supported in this device.</string>
+    <string name="connect_hint">Click to connect.</string>
+    <string name="sync_hint">In order to sync, you need to use the same WebMap as the other device. Disconnecting&#8230;</string>
+
+</resources>

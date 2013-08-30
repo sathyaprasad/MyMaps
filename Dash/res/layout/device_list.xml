@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bluetooth_mode_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="@string/model_choose"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/bluetooth_mode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/mode_discovery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/model_discovery"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/mode_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/model_listen"
+                android:textSize="18sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:text="@string/disconnect_peer"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/bluetooth_option_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/model_choose"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/sync_mode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/mode_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/model_send"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/mode_receive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/model_receive"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/mode_bi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/model_bi"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/option_choose"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/option_extent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/option_extent"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/option_layers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/option_layer"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/option_popups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/option_popup"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/me"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <include
+        android:id="@+id/my_device_info"
+        layout="@layout/device_cell" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/peers"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:id="@+id/peer_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

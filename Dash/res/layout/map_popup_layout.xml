@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="300dp"
+    android:background="@android:color/holo_blue_dark" >
+
+    <TextView
+        android:id="@+id/map_popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="7dp"
+        android:text="@string/map_popup"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/map_popup_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/map_popup_title"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/icon_sort_back"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/map_popup_next"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/map_popup_back"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/icon_sort_next"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/map_popup_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="365dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/image_description"
+        android:scaleType="fitXY"
+        android:src="@drawable/close_icon_white"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/map_popup_container"
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:layout_below="@id/map_popup_title"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ToggleButton
+        android:id="@+id/compass_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_compass"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/light_sensor_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_light"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/gyro_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_gyro"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/gps_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_gps"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/proximity_sensor_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_proximity"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/nfc_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_nfc"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+    <ToggleButton
+        android:id="@+id/voice_indicator"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/icon_sensor_voice"
+        android:clickable="true"
+        android:contentDescription="@string/image_description"
+        android:textOff=""
+        android:textOn=""
+        android:visibility="gone" />
+
+</LinearLayout>
