@@ -11,14 +11,11 @@ import android.net.NetworkInfo;
 import android.os.Bundle;
 
 public class NetworkMonitorFragment extends Fragment {
+
 	private OnNetworkChangeListener listener;
 	private IntentFilter newworkStatusFilter;
 	private NetworkMonitor networkMonitor;
-	public boolean isConnected;
-
-	public NetworkMonitorFragment() {
-		isConnected = true;
-	}
+	private boolean isConnected;
 
 	public interface OnNetworkChangeListener {
 		public void onNetworkChange(Boolean isConnected);
@@ -61,23 +58,29 @@ public class NetworkMonitorFragment extends Fragment {
 		getActivity().registerReceiver(networkMonitor, newworkStatusFilter);
 	}
 
+	/* notify the activity when the network connectivity changes */
 	public class NetworkMonitor extends BroadcastReceiver {
-
 		@Override
 		public void onReceive(Context context, Intent intent) {
-			ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+			ConnectivityManager cm = (ConnectivityManager) context
+					.getSystemService(Context.CONNECTIVITY_SERVICE);
 			NetworkInfo netInfo = cm.getActiveNetworkInfo();
-			if (netInfo == null) {
-				if (isConnected) {
-					isConnected = false;
-					listener.onNetworkChange(false);
-				}
-			} else {
-				if (!isConnected) {
-					isConnected = true;
-					listener.onNetworkChange(true);
-				}
+			if ((netInfo == null && isConnected)
+					|| (netInfo != null && !isConnected)) {
+				isConnected = !isConnected;
+				listener.onNetworkChange(isConnected);
 			}
 		}
+	}
+
+	/* make a toast when the network connectivity changes */
+	public void processNetworkChange() {
+		String toast = null;
+		if (isConnected) {
+			toast = getString(R.string.internet_connected);
+		} else {
+			toast = getString(R.string.internet_disconnected);
+		}
+		Utility.toast(getActivity(), toast);
 	}
 }

@@ -14,7 +14,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:gravity="center_vertical"
-            android:text="@string/model_choose"
+            android:text="@string/bluetooth_model_choose"
             android:textSize="18sp" />
 
         <RadioGroup
@@ -27,7 +27,7 @@
                 android:id="@+id/mode_discovery"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/model_discovery"
+                android:text="@string/bluetooth_model_discovery"
                 android:textSize="18sp" />
 
             <RadioButton
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/model_listen"
+                android:text="@string/bluetooth_model_listen"
                 android:textSize="18sp" />
         </RadioGroup>
     </LinearLayout>
@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
-        android:text="@string/disconnect_peer"
+        android:text="@string/bluetooth_disconnect_peer"
         android:textSize="18sp"
         android:visibility="gone" />
 
@@ -73,7 +73,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="@string/model_choose"
+                android:text="@string/bluetooth_model_choose"
                 android:textSize="18sp" />
 
             <RadioGroup
@@ -85,14 +85,14 @@
                     android:id="@+id/mode_send"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/model_send"
+                    android:text="@string/bluetooth_model_send"
                     android:textSize="18sp" />
 
                 <RadioButton
                     android:id="@+id/mode_receive"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/model_receive"
+                    android:text="@string/bluetooth_model_receive"
                     android:textSize="18sp" />
 
                 <RadioButton
@@ -100,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:text="@string/model_bi"
+                    android:text="@string/bluetooth_model_bi"
                     android:textSize="18sp" />
             </RadioGroup>
         </LinearLayout>
@@ -115,7 +115,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="@string/option_choose"
+                android:text="@string/bluetooth_option_choose"
                 android:textSize="18sp" />
 
             <CheckBox
@@ -123,7 +123,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/option_extent"
+                android:text="@string/bluetooth_option_extent"
                 android:textSize="18sp" />
 
             <CheckBox
@@ -131,7 +131,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/option_layer"
+                android:text="@string/bluetooth_option_layer"
                 android:textSize="18sp" />
 
             <CheckBox
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/option_popup"
+                android:text="@string/bluetooth_option_popup"
                 android:textSize="18sp" />
         </LinearLayout>
     </LinearLayout>
@@ -155,7 +155,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/me"
+        android:text="@string/bluetooth_me"
         android:textSize="16sp" />
 
     <View
@@ -179,7 +179,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="@string/peers"
+        android:text="@string/bluetooth_peers"
         android:textSize="16sp" />
 
     <View

@@ -3,5 +3,20 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="zero">0dp</dimen>
+
+    <!-- UI Helper -->
+    <dimen name="title_top_margin">10dp</dimen>
+    <dimen name="title_bottom_margin">5dp</dimen>
+    <dimen name="title_icon_width">36dp</dimen>
+    <dimen name="title_icon_height">36dp</dimen>
+    <dimen name="title_icon_right_margin">10dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="block_bottom_margin">30dp</dimen>
+
+    <!-- callout -->
+    <dimen name="callout_height">300dp</dimen>
+    <dimen name="callout_width">350dp</dimen>
 
 </resources>

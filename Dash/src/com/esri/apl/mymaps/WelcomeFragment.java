@@ -30,11 +30,13 @@ public class WelcomeFragment extends Fragment {
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.welcome_message_layout, container, false);
-		TextView messageText = (TextView) view.findViewById(R.id.home_msg);
+	public View onCreateView(LayoutInflater inflater,
+			final ViewGroup container, Bundle savedInstanceState) {
+		View view = inflater.inflate(R.layout.welcome_layout, container, false);
+		// when there is no item in the database, show the welcome message
+		TextView messageText = (TextView) view.findViewById(R.id.welcome_msg);
+		// when the welcome message is clicked, start the showcase
 		messageText.setOnClickListener(new OnClickListener() {
-
 			public void onClick(View v) {
 				listener.onShowcaseClicked();
 			}
